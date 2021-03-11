@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+<!-- Website CSS style -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style2.css">
+
+		<title>Student Complain Portal</title>
+        
+	</head>
+	<body>
+    <div class="container">
+       <nav class="navbar navbar-fixed-top">
+    
+            <div class="navbar-header">
+                 <a class="navbar-brand" href="rrsimt.ac.in">
+                     <img alt="RRSIMT" src="img/raj.jpg" width="100" height="90">
+                 </a>
+                 <label>Rajarshi Rananjay Sinh Institute Of Management & Technology</label> 
+           </div>
+        </nav>
+		<div class="top-nav">
+				<span class="menu">Menu</span>	
+				<ul class="w3l">
+					<li><a class="active" href="#"><span><b>Home</b></span></a></li>
+					<li><a href="index.php" class="scroll"><span><b>Form</b></span></a></li>
+					<li><a href="review.html" class="scroll"><span><b>Review</b></span></a></li> 
+					<li><a href="#" class="scroll"><span><b>About</b></span></a></li>
+					<li><a href="#" class="scroll"><span><b>Contact</b></span></a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.w3l" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>
+				<!-- //script-for-menu -->
+			</div><!-- //navigation end here -->	
+      <div class="card card-container">
+             <form class="form-signin" method="POST"action="index.php" enctype="multipart/form-data">
+               <h3>Name :</h3><br> <input type="text" id="inputName"name="name" class="form-control" placeholder="Complete Name" required autofocus>
+                 
+               <h3>Roll No :</h3><input type="text" name="roll_no" id="inputRoll_no" class="form-control"  placeholder="Roll No  ( 10 - digits only)" required >
+                
+               <h3>D.O.B :</h3><input type="date" name="dob" id="inputdate" class="form-control"   required >
+                 
+               <h3> Complain :</h3>  <textarea style="height: 80px"name="complain" id="inputComplain" class="form-control" placeholder="Enter Your Complain" required ></textarea>
+               <h4> file :</h3><input type="file"name="file">
+                 <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me" required> I accept <a href="terms.html"> Terms & conditions </a>
+                    </label>
+                </div>
+                
+                        <button class="btn btn-lg btn-primary btn-block btn-signin"name="submit" type="submit" >Submit</button>
+            </form><!-- /form -->
+
+     </div><!-- /card-container -->
+  </div><!-- /container -->
+          
+        <!--script include..........-->
+            <script src="js/bootstrap.min.js"></script>
+	        <script src="query.js"></script>
+        <script src="js/form.js"></script>
+  </body>
+</html>

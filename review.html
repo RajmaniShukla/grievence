@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+<!-- Website CSS style -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/review.css">
+
+		<title>Review</title>
+    </head>
+	<body>
+    <div class="container">
+
+	
+        <nav class="navbar navbar-fixed-top">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="RRSIMT" src="img/raj.jpg" width="100" height="90">
+      </a>
+        <label>Rajarshi Rananjay Sinh Institute Of Management & Technology</label>      
+     </div>
+</nav>
+        <div class="top-nav">
+				<span class="menu">Menu</span>	
+				<ul class="w3l">
+					<li><a class="active" href="#"><span>Home</span></a></li>
+					<li><a href="index.html" class="scroll"><span>Form</span></a></li>
+					<li><a href="review.html" class="scroll"><span>Review</span></a></li> 
+					<li><a href="#" class="scroll"><span>About</span></a></li>
+					<li><a href="#" class="scroll"><span>Contact</span></a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.w3l" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>
+				<!-- //script-for-menu -->
+			</div><!-- //navigation end here -->
+	  <div class="card card-container">
+		<div class="heading" >
+            <h1 align="center">Check Complain Status</h1>
+                                
+        </div>
+          
+           <form class="form-signin"method="POST"action="review.php">
+               <h3>Complain ID :</h3><input type="text" name="randum" id="inputText" class="form-control" placeholder="Complain ID" required autofocus>
+               <h3>D.O.B :</h3><input type="date" name="dob" id="inputDate" class="form-control"   required >    
+               <h3>Roll No :</h3><input type="text" name="roll_no" id="inputRoll_no" class="form-control"  placeholder="Roll No  ( 10 - digits only)" required >
+              <br><br>
+              <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" name="search">SEARCH</button>
+          </form>
+        </div>
+			
+          
+    </div><!-- /container -->
+
+	</body>
+</html>
